@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar ;
     BottomNavigationView btm;
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
