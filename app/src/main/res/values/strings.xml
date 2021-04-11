@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">InternshipProgram</string>
+    <string name="logout"> &#160; Logout</string>
+    <string name="share_app">&#160; Share App</string>
+    <string name="about_us">&#160; About Us</string>
+    <string name="contact_us">&#160; Contact Us</string>
+    <string name="help">&#160; Help</string>
+    <string name="report_issue">&#160; Report Issue</string>
+    <string name="my_profile">&#160; My Profile</string>
+    <string name="account">ACCOUNT</string>
+    <string name="digilocker_drive">&#160; DigiLocker Drive</string>
+    <string name="more">MORE</string>
+    <string name="rate_app">&#160; Rate App</string>
+    <string name="support">SUPPORT</string>
+
 </resources>

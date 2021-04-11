@@ -3,28 +3,148 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lgrey"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        app:popupTheme="@style/Theme.AppCompat.Light">
-
+        android:background="@color/lgrey"
+        app:popupTheme="@style/Theme.AppCompat.Light"
+        >
         <ImageView
             android:layout_width="200dp"
             android:layout_height="match_parent"
-            android:src="@drawable/digi_logo" />
-
+            android:src="@drawable/dg"
+            android:padding="3dp"/>
     </androidx.appcompat.widget.Toolbar>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
+<ScrollView
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar"
+    android:layout_marginBottom="?attr/actionBarSize"
+    >
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/account"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_profile"
+            android:layout_marginStart="25dp"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_account" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/digilocker_drive"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_drive" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/support"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            android:layout_marginStart="25dp"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_help" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/report_issue"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_report" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_contact" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_about" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/more"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_app"
+            android:layout_marginStart="25dp"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_share" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rate_app"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_rate" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_logout" />
+
+    </LinearLayout>
+</ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btm"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
         android:layout_alignParentBottom="true"
-        android:elevation="@dimen/cardview_compat_inset_shadow"
-        />
+        android:background="@color/white"
+        app:menu="@menu/menu_bottom" />
+
 </RelativeLayout>
