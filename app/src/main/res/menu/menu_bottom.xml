@@ -4,15 +4,18 @@
         android:id="@+id/home"
         android:title="Home"
         android:icon="@drawable/ic_home"
+        android:checkable="true"
         />
     <item
         android:id="@+id/browse"
         android:title="Browse"
         android:icon="@drawable/ic_browse"
+        android:checkable="true"
         />
     <item
         android:id="@+id/account"
         android:title="Account"
         android:icon="@drawable/ic_account"
+        android:checkable="true"
         />
 </menu>
